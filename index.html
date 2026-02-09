@@ -27,14 +27,6 @@
       <option value="rat_03">Rato 03</option>
     </select>
 
-    <label>Cor</label>
-    <select id="color">
-      <option value="slime">Slime</option>
-      <option value="rust">Ferrugem</option>
-      <option value="concrete">Concreto</option>
-      <option value="neon">Neon</option>
-    </select>
-
     <label>Chapéu</label>
     <select id="hat">
       <option value="none">Nenhum</option>
@@ -60,10 +52,10 @@
   document.getElementById("save").addEventListener("click", async () => {
     if (!u || !token) return msg("Faltou u= e token= na URL.");
 
-    const cosmetics = {
-      model: document.getElementById("model").value,
-      color: document.getElementById("color").value,
-      hat: document.getElementById("hat").value
+   const cosmetics = {
+  model: document.getElementById("model").value,
+  hat: document.getElementById("hat").value
+};
     };
 
     msg("Salvando...");
